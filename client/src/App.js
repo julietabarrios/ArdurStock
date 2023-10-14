@@ -59,7 +59,7 @@ function App() {
     <Routes>
     <Route path="/" element={<Home isLoggedIn={isLoggedIn} logout={logout} />} />
     <Route
-    path="/login/:type"
+    path="/login"
     element ={ isLoggedIn ? <Navigate to='/' /> : <Login  login={login} /> } 
     />
     </Routes>
